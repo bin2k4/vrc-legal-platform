@@ -1,0 +1,43 @@
+{
+  "name": "vrc",
+  "version": "1.0.0",
+  "description": "VRC - Trang web tư vấn pháp lý chuyên về luật doanh nghiệp",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "seed-documents": "node scripts/seedDocuments.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "compromise": "^14.14.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.10.0",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mammoth": "^1.11.0",
+    "mongoose": "^7.5.0",
+    "multer": "^1.4.5-lts.1",
+    "natural": "^8.1.0",
+    "openai": "^4.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "VRC",
+    "tư vấn pháp lý",
+    "AI",
+    "luật doanh nghiệp",
+    "MongoDB"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
